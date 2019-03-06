@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.example.myapplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/nature"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".ui.splashScreen.SplashScreenActivity"
+            android:theme="@style/AppTheme.splashScreen"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.learning.LearningActivity" />
+
+        <activity android:name=".ui.home.DashboardMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui_tv.TvAppActivity"
+            android:theme="@style/Theme.Leanback"></activity>
+    </application>
+
+</manifest>

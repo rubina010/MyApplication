@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/letsgo"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="75sp"
+        android:textStyle="italic" />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/start_learning_view_viewpager"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+      />
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!--login screen-->
+    <string name="welcome">Welcome To My World</string>
+    <string name="username">Username</string>
+    <string name="nameHint">Enter your username...</string>
+    <string name="password">Password</string>
+    <string name="passwordHint">Enter your password...</string>
+    <string name="login">LogIn</string>
+    <string name="newHere">New here?</string>
+    <string name="signIn">SignIn</string>
+    <string name="forget">Forget Password?</string>
+    <string name="oldPassword">Old Password</string>
+    <string name="newPassword">New password</string>
+    <string name="resetButton">Reset Password</string>
+    <string name="oldPasswordHint">Enter old password...</string>
+    <string name="newPasswordHint">Enter new password...</string>
+    <string name="letsgo">Lets Go...</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="finish">Finish</string>
+
+
+    <!--tab layout and view pager-->
+    <string-array name="all_songs_list">
+        <item>Sorry by Halsey</item>
+        <item>Colors by Halsey</item>
+        <item>Numb by Linkin Park</item>
+        <item>Heavy by Linkin Park</item>
+        <item>Colser by The Chanismoker</item>
+        <item>Paris by The Chainsmoker</item>
+        <item>Chlorine by Twenty one pilots</item>
+        <item>Ride by Twenty one pilots</item>
+        <item>Nothing by The Script</item>
+        <item>The man who cannot be moved by The Script</item>
+        <item>Science and faith by The Script</item>
+    </string-array>
+</resources>

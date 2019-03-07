@@ -1,6 +1,7 @@
 package com.example.myapplication.di.module
 
 import com.example.myapplication.di.scope.ActivityScoped
+import com.example.myapplication.ui.book.BookDetailsFragment
 import com.example.myapplication.ui.dashboard.DashboardActivity
 import com.example.myapplication.ui.home.DashboardMainActivity
 import com.example.myapplication.ui.learning.LearningActivity
@@ -30,4 +31,8 @@ abstract class ActivityBindingModule {
     @ActivityScoped
     @ContributesAndroidInjector
     abstract fun bindTvAppActivity(): TvAppActivity
+
+    @ActivityScoped
+    @ContributesAndroidInjector
+    abstract fun bindBookDetailsActivity(): BookDetailsFragment
 }

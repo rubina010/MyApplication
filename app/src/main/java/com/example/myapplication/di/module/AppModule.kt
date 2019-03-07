@@ -5,6 +5,7 @@ import android.content.Context
 import androidx.room.Room
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.example.myapplication.database.AppDatabase1
 import com.example.myapplication.ui_tv.database.AppDatabase
 import com.example.myapplication.utils.APP_DATABASE
 import com.google.gson.Gson
@@ -26,8 +27,12 @@ class AppModule {
 
         @Singleton
         @Provides
-        fun provideDatabase(context: Context) = Room.databaseBuilder(context, AppDatabase::class.java, APP_DATABASE).addMigrations(MIGRATION_1_2).
-                allowMainThreadQueries().build()
+        fun provideDatabase(context: Context) = Room.databaseBuilder(context, AppDatabase1::class.java, APP_DATABASE).addMigrations(MIGRATION_1_2).
+                build()
+    @Singleton
+    @Provides
+    fun provideTvDatabase(context: Context) = Room.databaseBuilder(context, AppDatabase::class.java, APP_DATABASE).addMigrations(MIGRATION_1_2).
+            build()
 
         @Singleton
         @Provides

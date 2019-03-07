@@ -37,6 +37,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.book.BookDetailsFragment" />
         <activity
             android:name=".ui_tv.TvAppActivity"
             android:theme="@style/Theme.Leanback"></activity>

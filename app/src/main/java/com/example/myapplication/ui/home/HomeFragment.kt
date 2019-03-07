@@ -26,17 +26,12 @@ class HomeFragment : DaggerFragment() {
     private lateinit var allSongsAdapter: CustomListAdapter
     private lateinit var popularSongsAdapter: CustomListAdapter
     private lateinit var favouriteSongsAdapter: CustomListAdapter
-    lateinit var selectedTab: MutableLiveData<String>
     private lateinit var tabAllSongs: TabLayout.Tab
     private lateinit var tabPopularSongs: TabLayout.Tab
     private lateinit var tabFavouriteSongs: TabLayout.Tab
     private lateinit var tabLayout: TabLayout.Tab
     private lateinit var adapter: ViewPagerAdapter
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (!::selectedTab.isInitialized) {
-            selectedTab = MutableLiveData()
-            selectedTab.postValue(ALL_SONGS)
-        }
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         return view
     }
@@ -60,7 +55,6 @@ class HomeFragment : DaggerFragment() {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 tabLayout = tab!!
                 activity_dashboard_main_viewpager.currentItem = tab.position
-                selectedTab.postValue(tab.tag.toString())
                 tabSelected()
             }
 

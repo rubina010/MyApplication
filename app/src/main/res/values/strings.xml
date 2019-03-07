@@ -35,4 +35,18 @@
         <item>The man who cannot be moved by The Script</item>
         <item>Science and faith by The Script</item>
     </string-array>
+
+    <!--tab layout and view pager for book-->
+    <string-array name="all_books">
+        <item>Into the thin air by jon krakauer</item>
+        <item>Safe haven by Nicolos Sparks</item>
+        <item>A thousand splendid sun by Khaled Hosseini</item>
+        <item>Only love is real by Dr. brian weiss</item>
+    </string-array>
+    <string-array name="all_author">
+        <item>jon krakauer - Into the thin air</item>
+        <item>Nicolos Sparks - Safe haven</item>
+        <item>Khaled Hosseini - A thousand splendid sun</item>
+        <item>Dr. brian weiss - Only love is real</item>
+    </string-array>
 </resources>

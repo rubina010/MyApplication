@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back_press_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_navigate_before_black_24dp" />
+
+    <TextView
+        android:id="@+id/book_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Into The Thin Air"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/book_author_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_title_text_view"
+        android:text="written by: Jon krakauer"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_author_text_view"
+        android:layout_margin="10dp"
+        android:text="Krakauer describes the events leading up to his eventual decision to participate in an Everest expedition in May 1996,  despite having mostly given up mountain-climbing years before. The 1996 expedition season recorded 8 deaths, including that of Krakauer's guide Andy Harris. This was the third-highest recorded   number of deaths on the mountain in a single day; the April 2015Nepal earthquake caused the most at 21.
+\n\n
+Krakauer, a journalist for the adventure magazine Outside, said initially his intentions to climb Everest were purely professional. The original magazine story was to have Krakauer climb only to base camp, and report on the commercialization of the mountain. However, the idea of Everest reawakened his childhood desire to climb the mountain. Krakauer asked his editor to put off the story for a year so that he could train for a climb to the summit. From there, the book moves between events that take place on the mountain, and the unfolding tragedy, which takes place during the push to the summit. In the book, Krakauer alleges that essential safety methods adopted over the years by experienced guides on Everest are sometimes compromised by the competition between rival guiding agencies, in order to get their clients to the summit."
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</RelativeLayout>

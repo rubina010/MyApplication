@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "tbl_book")
 data class BookModel(
         @PrimaryKey
-        val id: Int,
         @ColumnInfo(name = "book_title")
         val book_title: String,
 

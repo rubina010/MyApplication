@@ -1,7 +1,6 @@
 package com.example.myapplication.ui_tv.data
 
-import androidx.lifecycle.LiveData
-import com.example.myapplication.ui_tv.database.AppDatabase
+import com.example.myapplication.database.AppDatabase
 import com.example.myapplication.ui_tv.entity.SongEntity
 import timber.log.Timber
 import javax.inject.Inject

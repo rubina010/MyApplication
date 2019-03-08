@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="50dp"
     android:background="@android:color/white"
     android:orientation="vertical">
 
@@ -11,6 +10,7 @@
         android:id="@+id/fragment_book_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:layout_marginTop="50dp"
         app:tabGravity="fill"
         app:tabIndicator="@drawable/tab_indicator"
         app:tabIndicatorColor="@color/colorPrimary"
@@ -24,7 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/fragment_book_tab_layout"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/border_background"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
         android:drawableStart="@drawable/ic_add_black_24dp"
         android:drawablePadding="10dp"
         android:padding="10dp"
@@ -35,7 +36,7 @@
         android:id="@+id/fragment_book_view_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fragment_book_tab_layout"
+        android:layout_below="@id/fragment_book_add_text_view"
         android:layout_marginBottom="55dp">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -48,4 +49,108 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/fragment_book_add_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#A6000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/border_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Book Title" />
+
+                <EditText
+                    android:id="@+id/fragment_book_title_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="enter the name of the book" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Author's Name" />
+
+                <EditText
+                    android:id="@+id/fragment_book_author_name_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="enter the author of the book" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Book Description" />
+
+                <EditText
+                    android:id="@+id/fragment_book_description_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="enter the description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Book Image" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fragment_book_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background"
+                android:text="Add" />
+
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
